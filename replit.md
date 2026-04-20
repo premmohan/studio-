@@ -2,7 +2,20 @@
 
 ## Overview
 
-pnpm workspace monorepo using TypeScript. Each package manages its own dependencies.
+pnpm workspace monorepo using TypeScript. Contains Prem Mohan's personal portfolio website and a shared API server.
+
+## Artifacts
+
+- **portfolio** (`artifacts/portfolio/`) — 5-page personal portfolio site for Prem Mohan (AI/ML developer). Dark navy theme (#0a0a1a) with electric blue (#00D4FF) and purple (#7B2FFE) accents. Pages: Home, Projects, About, Skills, Contact.
+- **api-server** (`artifacts/api-server/`) — Shared Express API server
+
+## Portfolio Pages
+
+- `/` — Home (hero, featured projects, CTA buttons)
+- `/projects` — All 8 projects grid
+- `/about` — Bio + journey timeline
+- `/skills` — Skill categories with animated progress bars
+- `/contact` — Contact form (formsubmit.co) + social links
 
 ## Stack
 
@@ -10,6 +23,7 @@ pnpm workspace monorepo using TypeScript. Each package manages its own dependenc
 - **Node.js version**: 24
 - **Package manager**: pnpm
 - **TypeScript version**: 5.9
+- **Frontend**: React + Vite, Tailwind CSS, framer-motion, wouter routing
 - **API framework**: Express 5
 - **Database**: PostgreSQL + Drizzle ORM
 - **Validation**: Zod (`zod/v4`), `drizzle-zod`

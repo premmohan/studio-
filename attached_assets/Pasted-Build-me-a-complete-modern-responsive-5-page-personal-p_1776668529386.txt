@@ -1,0 +1,159 @@
+Build me a complete, modern, responsive 5-page personal portfolio website using HTML, CSS, and vanilla JavaScript. No frameworks needed. The site should be clean, professional, dark-themed (dark navy/charcoal background with accent colors like electric blue #00D4FF and soft white text), with smooth scroll animations and hover effects.
+
+=== SITE STRUCTURE (5 PAGES) ===
+
+PAGE 1: HOME (index.html)
+- Navigation bar (sticky top) with links to all 5 pages. Include my name "Prem Mohan" as logo on the left. Nav links: Home, Projects, About, Skills, Contact
+- Hero section:
+  - Large heading: "Hi, I'm Prem Mohan"
+  - Subheading: "AI/ML Developer | Building Intelligent Applications"
+  - Short tagline: "I build AI-powered tools — from NLP sentiment analyzers to RAG chatbots and ML recommendation systems."
+  - Two CTA buttons: "View My Projects" (links to projects.html) and "Visit premmohan.com" (links to https://premmohan.com in new tab)
+- Featured Projects section: Show 3 project cards (Math Formula Maker, Document RAG Chatbot, Movie Recommendation System) as a preview grid with "See All Projects →" link
+- Footer on every page with: "© 2025 Prem Mohan | Built with passion" and links to premmohan.com
+
+PAGE 2: PROJECTS (projects.html)
+- Page title: "My Projects"
+- Subtitle: "A collection of AI/ML applications I've built and deployed"
+- Display ALL 6 projects as beautiful cards in a responsive grid (2 columns on desktop, 1 on mobile)
+- Each project card should have:
+  - Project number badge
+  - Project title
+  - Short description (2-3 lines)
+  - Tech stack tags/badges
+  - "Live Demo →" button linking to the project URL
+  - Hover effect: subtle lift/glow animation
+
+PROJECT DETAILS FOR CARDS:
+
+Card 1: Math Formula Maker
+- Description: "An interactive web tool that helps users generate, visualize, and understand mathematical formulas. Built for students and educators who want quick formula references."
+- Tech: HTML, CSS, JavaScript, Replit
+- Link: https://math-formula-maker--impremmohan.replit.app/
+- Icon suggestion: 🧮
+
+Card 2: Groq Chatbot
+- Description: "A high-speed AI chatbot powered by Groq's LPU inference engine, built with LangChain for conversation management and Streamlit for an interactive web interface."
+- Tech: Python, LangChain, Groq API, Streamlit
+- Link: https://groq-chatbot-prem-mohan.streamlit.app/
+- Icon suggestion: 🤖
+
+Card 3: Movie Recommendation System
+- Description: "An ML-powered movie recommendation engine that suggests personalized movies based on user preferences using collaborative and content-based filtering techniques."
+- Tech: Python, Machine Learning, Streamlit, Pandas
+- Link: https://movie-recommendation-system-prem-mohan.streamlit.app
+- Icon suggestion: 🎬
+
+Card 4: Sentiment Analyzer (NLP)
+- Description: "A Natural Language Processing application that analyzes text input and determines sentiment polarity — positive, negative, or neutral — with confidence scores."
+- Tech: Python, NLP, TextBlob/NLTK, Streamlit
+- Link: https://sentiment-analyzer-nlp-prem-mohan.streamlit.app/
+- Icon suggestion: 📊
+
+Card 5: Document RAG Chatbot
+- Description: "An intelligent document Q&A chatbot using Retrieval-Augmented Generation (RAG). Upload any document and ask questions — the AI retrieves relevant context and generates accurate answers."
+- Tech: Python, RAG, LangChain, Vector DB, Streamlit
+- Link: https://document-app-rag-chatbot-prem-mohan.streamlit.app/
+- Icon suggestion: 📄🤖
+
+Card 6: Titanic Survival Predictor
+- Description: "A classic machine learning project that predicts Titanic passenger survival using classification algorithms. Features interactive inputs for passenger details and real-time predictions."
+- Tech: Python, Scikit-learn, Pandas, Streamlit
+- Link: https://titanic-prem-mohan.streamlit.app/
+- Icon suggestion: 🚢
+
+Card 7: OcculAI
+- Link: Button says "Demo Coming Soon" (greyed out, no link)
+- Icon suggestion: eye image
+
+Card 9 : Alerto 
+- Link: Button says "Demo Coming Soon" (greyed out, no link)
+- Icon suggestion: any notifications image 
+
+
+PAGE 3: ABOUT (about.html)
+- Page title: "About Me"
+- A brief professional bio section:
+  "I'm Prem Mohan — an AI/ML enthusiast and developer passionate about building intelligent, real-world applications. From NLP-powered sentiment analyzers to RAG-based document chatbots, I love turning complex AI concepts into practical, user-friendly tools. I believe in learning by building, and every project in my portfolio represents a real problem I wanted to solve."
+- A "My Journey" timeline section showing:
+  - Started learning Python & Data Science
+  - Built first ML project (Titanic Predictor)
+  - Explored NLP (Sentiment Analyzer)
+  - Dove into LLMs & RAG (Document Chatbot, Groq Chatbot)
+  - Currently: Building more AI tools & expanding portfolio
+- Link back to premmohan.com: "Learn more about me at premmohan.com"
+
+PAGE 4: SKILLS (skills.html)
+- Page title: "Skills & Tech Stack"
+- Display skills in categorized sections with visual progress bars or badge-style tags:
+
+  Programming Languages: Python, JavaScript, HTML, CSS
+  AI/ML: Machine Learning, NLP, Deep Learning, RAG, LangChain
+  Libraries & Tools: Scikit-learn, Pandas, NumPy, TextBlob, NLTK
+  LLM & APIs: Groq API, OpenAI, LangChain, Vector Databases
+  Frontend: HTML5, CSS3, JavaScript, Responsive Design
+  Deployment: Streamlit, Replit, GitHub, Vercel
+  Other: Git, REST APIs, Data Visualization
+
+- Use animated skill bars or modern tag/chip design with icons
+
+PAGE 5: CONTACT (contact.html)
+- Page title: "Get In Touch"
+- Subtitle: "Have a project idea or want to collaborate? Let's connect!"
+- A simple contact form with fields: Name, Email, Message, Submit button
+  (Use FormSubmit.co or Formspree for free form handling — no backend needed. Use action="https://formsubmit.co/YOUR_EMAIL" method="POST")
+- Alternative contact section:
+  - "Visit my website: premmohan.com"
+  - GitHub icon/link (placeholder: github.com/impremmohan)
+  - LinkedIn icon/link (placeholder)
+  - Email icon
+
+=== DESIGN REQUIREMENTS ===
+
+1. COLOR SCHEME:
+   - Background: Dark navy (#0a0a1a) or charcoal (#1a1a2e)
+   - Primary accent: Electric blue (#00D4FF) or cyan
+   - Secondary accent: Purple (#7B2FFE) for gradients
+   - Text: White (#ffffff) and light gray (#b0b0b0)
+   - Card backgrounds: Slightly lighter dark (#16213e)
+
+2. TYPOGRAPHY:
+   - Use Google Fonts: 'Inter' for body, 'Poppins' for headings
+   - Clean, modern, readable
+
+3. ANIMATIONS:
+   - Smooth fade-in on scroll for sections
+   - Card hover: lift up with box-shadow glow
+   - Button hover: color shift with smooth transition
+   - Navigation: smooth underline animation on hover
+   - Page load: subtle fade-in animation
+
+4. RESPONSIVE:
+   - Mobile-first design
+   - Hamburger menu on mobile
+   - Cards stack to single column on mobile
+   - All text readable on all screen sizes
+
+5. GENERAL:
+   - All external links open in new tab (target="_blank")
+   - Active page highlighted in navigation
+   - Consistent header/footer across all pages
+   - Fast loading, minimal dependencies
+   - SEO meta tags on each page
+   - Favicon (use a simple emoji or generate one)
+
+=== FILE STRUCTURE ===
+/
+├── index.html        (Home)
+├── projects.html     (Projects)
+├── about.html        (About)
+├── skills.html       (Skills)
+├── contact.html      (Contact)
+├── css/
+│   └── style.css     (Main stylesheet)
+├── js/
+│   └── main.js       (Animations, mobile menu, interactions)
+└── assets/
+    └── (any images or icons)
+
+Please build all 5 pages completely with full content, styling, and interactivity. Make it production-ready and deployable.
