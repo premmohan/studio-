@@ -1,10 +1,10 @@
 export const projects = [
   {
     id: 1,
-    title: "Math Formula Maker",
+    title: "Algebro",
     description: "An interactive web tool that helps users generate, visualize, and understand mathematical formulas. Built for students and educators who want quick formula references.",
     tech: ["HTML", "CSS", "JavaScript", "Replit"],
-    link: "https://math-formula-maker--impremmohan.replit.app/",
+    link: "https://alerto-webpage-alerto-site.vercel.app/",
     icon: "🧮"
   },
   {
@@ -49,21 +49,19 @@ export const projects = [
   },
   {
     id: 7,
-    title: "OcculAI",
+    title: "Oocul AI",
     description: "A cutting-edge AI project currently in development. Stay tuned for an exciting reveal.",
     tech: ["AI/ML", "Computer Vision"],
-    link: null,
-    icon: "👁️",
-    comingSoon: true
+    link: "https://ooculai-website-page-oocul-ai.vercel.app/",
+    icon: "👁️"
   },
   {
     id: 8,
     title: "Alerto",
     description: "A smart notification and alert system powered by AI. Currently in development.",
     tech: ["AI/ML", "Notifications"],
-    link: null,
-    icon: "🔔",
-    comingSoon: true
+    link: "https://alerto-webpage-alerto-site.vercel.app/",
+    icon: "🔔"
   }
 ];
 
