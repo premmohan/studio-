@@ -51,14 +51,14 @@ export default function ContactPage() {
                   <span className="font-medium">premmohan.com</span>
                 </a>
 
-                <a href="https://github.com/impremmohan" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 text-muted-foreground hover:text-primary transition-colors group">
+                <a href="https://github.com/premmohan" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 text-muted-foreground hover:text-primary transition-colors group">
                   <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
                     <SiGithub className="h-5 w-5 text-primary" />
                   </div>
-                  <span className="font-medium">github.com/impremmohan</span>
+                  <span className="font-medium">github.com/premmohan</span>
                 </a>
 
-                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 text-muted-foreground hover:text-primary transition-colors group">
+                <a href="https://www.linkedin.com/in/prem-mohan/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 text-muted-foreground hover:text-primary transition-colors group">
                   <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
                     <FaLinkedin className="h-5 w-5 text-primary" />
                   </div>
