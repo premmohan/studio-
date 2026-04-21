@@ -4,7 +4,7 @@ export const projects = [
     title: "Algebro",
     description: "An interactive web tool that helps users generate, visualize, and understand mathematical formulas. Built for students and educators who want quick formula references.",
     tech: ["HTML", "CSS", "JavaScript", "Replit"],
-    link: "https://alerto-webpage-alerto-site.vercel.app/",
+    link: "https://algebro-algebro.vercel.app/",
     icon: "🧮"
   },
   {

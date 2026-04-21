@@ -6,7 +6,10 @@ import { projects } from "@/lib/data";
 import { ProjectCard } from "@/components/ProjectCard";
 
 export default function HomePage() {
-  const featuredProjects = projects.slice(0, 3);
+  const featuredTitles = ["Algebro", "Alerto", "Oocul AI"];
+  const featuredProjects = featuredTitles
+    .map((title) => projects.find((p) => p.title === title))
+    .filter((p): p is (typeof projects)[number] => Boolean(p));
 
   return (
     <div className="flex flex-col min-h-screen">
