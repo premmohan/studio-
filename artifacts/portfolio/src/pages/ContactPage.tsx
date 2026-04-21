@@ -80,7 +80,7 @@ export default function ContactPage() {
               <div className="absolute -top-20 -right-20 w-64 h-64 bg-primary/5 rounded-full blur-[80px] pointer-events-none" />
 
               <form 
-                action="https://formsubmit.co/your@email.com" 
+                action="https://formsubmit.co/contact@premmohan.com" 
                 method="POST"
                 className="space-y-6 relative z-10"
               >
