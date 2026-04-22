@@ -4,7 +4,7 @@ export const projects = [
     title: "Algebro",
     description: "An interactive web tool that helps users generate, visualize, and understand mathematical formulas. Built for students and educators who want quick formula references.",
     tech: ["HTML", "CSS", "JavaScript", "Replit"],
-    link: "https://algebro-algebro.vercel.app/",
+    link: "https://algebro.premmohanstudio.com",
     icon: "🧮"
   },
   {
@@ -52,7 +52,7 @@ export const projects = [
     title: "Oocul AI",
     description: "A cutting-edge AI project currently in development. Stay tuned for an exciting reveal.",
     tech: ["AI/ML", "Computer Vision"],
-    link: "https://ooculai-website-page-oocul-ai.vercel.app/",
+    link: "https://ooculai.premmohanstudio.com",
     icon: "👁️"
   },
   {
@@ -60,7 +60,7 @@ export const projects = [
     title: "Alerto",
     description: "A smart notification and alert system powered by AI. Currently in development.",
     tech: ["AI/ML", "Notifications"],
-    link: "https://alerto-webpage-alerto-site.vercel.app/",
+    link: "https://alerto.premmohanstudio.com",
     icon: "🔔"
   }
 ];
