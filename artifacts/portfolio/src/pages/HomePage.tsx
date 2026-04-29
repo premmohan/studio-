@@ -1,7 +1,18 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, ExternalLink, Bot, Brain, MessageSquare, Globe, Rocket, ShieldCheck } from "lucide-react";
+import { ArrowRight, ExternalLink, Bot, Brain, MessageSquare, Globe, Rocket, ShieldCheck, Award } from "lucide-react";
 import { Link } from "wouter";
+
+const techStack = [
+  "OpenAI",
+  "Anthropic",
+  "Groq",
+  "LangChain",
+  "Hugging Face",
+  "React",
+  "TypeScript",
+  "Python",
+];
 
 const homeServices = [
   {
@@ -74,6 +85,68 @@ export default function HomePage() {
                 </a>
               </Button>
             </div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Trusted & Powered By */}
+      <section className="py-14 border-t border-border/50 bg-background/50">
+        <div className="container px-4 mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 15 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            className="text-center mb-10"
+          >
+            <div className="text-xs font-mono text-primary uppercase tracking-widest mb-3">
+              Trusted & Recognized
+            </div>
+            <p className="text-muted-foreground max-w-2xl mx-auto">
+              Officially registered with the Government of India and powered by
+              the world's leading AI and engineering technologies.
+            </p>
+          </motion.div>
+
+          {/* Government credentials */}
+          <motion.div
+            initial={{ opacity: 0, y: 15 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.1 }}
+            className="flex flex-wrap items-center justify-center gap-4 mb-10"
+          >
+            <div className="flex items-center gap-3 bg-card border border-border/50 rounded-full px-5 py-2.5 hover:border-primary/40 transition-colors">
+              <ShieldCheck className="h-4 w-4 text-primary" />
+              <span className="text-sm font-medium">MSME Registered</span>
+            </div>
+            <div className="flex items-center gap-3 bg-card border border-border/50 rounded-full px-5 py-2.5 hover:border-primary/40 transition-colors">
+              <Award className="h-4 w-4 text-primary" />
+              <span className="text-sm font-medium">GeM Registered</span>
+            </div>
+            <div className="flex items-center gap-3 bg-card border border-border/50 rounded-full px-5 py-2.5 hover:border-primary/40 transition-colors">
+              <Globe className="h-4 w-4 text-primary" />
+              <span className="text-sm font-medium">Government of India</span>
+            </div>
+          </motion.div>
+
+          {/* Tech stack strip */}
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className="flex flex-wrap items-center justify-center gap-x-10 gap-y-4"
+          >
+            {techStack.map((tech) => (
+              <span
+                key={tech}
+                className="text-base md:text-lg font-semibold text-muted-foreground/70 hover:text-primary transition-colors tracking-tight"
+                data-testid={`text-tech-${tech.toLowerCase().replace(/\s/g, "-")}`}
+              >
+                {tech}
+              </span>
+            ))}
           </motion.div>
         </div>
       </section>

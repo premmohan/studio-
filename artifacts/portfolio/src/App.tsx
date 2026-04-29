@@ -12,6 +12,7 @@ import ServicesPage from "@/pages/ServicesPage";
 import ProjectsPage from "@/pages/ProjectsPage";
 import AboutPage from "@/pages/AboutPage";
 import ContactPage from "@/pages/ContactPage";
+import PaymentPage from "@/pages/PaymentPage";
 
 const queryClient = new QueryClient();
 
@@ -36,6 +37,7 @@ function Router() {
         <Route path="/projects" component={ProjectsPage} />
         <Route path="/about" component={AboutPage} />
         <Route path="/contact" component={ContactPage} />
+        <Route path="/payment" component={PaymentPage} />
         <Route component={NotFound} />
       </Switch>
     </Layout>
