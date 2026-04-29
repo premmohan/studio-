@@ -9,6 +9,7 @@ export function Navbar() {
 
   const navLinks = [
     { href: "/", label: "Home" },
+    { href: "/services", label: "Services" },
     { href: "/projects", label: "Projects" },
     { href: "/about", label: "About" },
     { href: "/skills", label: "Skills" },
@@ -19,8 +20,8 @@ export function Navbar() {
     <nav className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/80 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container mx-auto px-4 h-16 flex items-center justify-between">
         <Link href="/">
-          <div className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary cursor-pointer">
-            Prem Mohan
+          <div className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary cursor-pointer tracking-wide">
+            PREM MOHAN STUDIO
           </div>
         </Link>
 

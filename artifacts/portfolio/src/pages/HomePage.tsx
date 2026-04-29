@@ -39,7 +39,7 @@ export default function HomePage() {
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link href="/projects">
                 <Button size="lg" className="w-full sm:w-auto h-12 px-8 bg-primary text-primary-foreground hover:bg-primary/90 shadow-[0_0_20px_-5px_rgba(0,212,255,0.5)]">
-                  View My Projects <ArrowRight className="ml-2 h-4 w-4" />
+                  View Our Projects <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
               </Link>
               <Button size="lg" variant="outline" asChild className="w-full sm:w-auto h-12 px-8 border-primary/30 hover:bg-primary/10">
@@ -62,7 +62,7 @@ export default function HomePage() {
               viewport={{ once: true }}
             >
               <h2 className="text-3xl font-bold">Featured Projects</h2>
-              <p className="text-muted-foreground mt-2">A glimpse of my recent AI/ML work.</p>
+              <p className="text-muted-foreground mt-2">A glimpse of our recent AI/ML work.</p>
             </motion.div>
             <motion.div
               initial={{ opacity: 0, x: 20 }}

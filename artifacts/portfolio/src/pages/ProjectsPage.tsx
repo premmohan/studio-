@@ -13,10 +13,10 @@ export default function ProjectsPage() {
           className="max-w-3xl mb-16"
         >
           <h1 className="text-4xl md:text-5xl font-bold mb-6">
-            My <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary">Projects</span>
+            Our <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary">Projects</span>
           </h1>
           <p className="text-lg text-muted-foreground">
-            A collection of intelligent applications I've built to solve real-world problems.
+            A collection of intelligent applications we've built to solve real-world problems.
             From natural language processing to recommendation engines and computer vision.
           </p>
         </motion.div>

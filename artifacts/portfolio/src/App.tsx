@@ -8,6 +8,7 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 
 import HomePage from "@/pages/HomePage";
+import ServicesPage from "@/pages/ServicesPage";
 import ProjectsPage from "@/pages/ProjectsPage";
 import AboutPage from "@/pages/AboutPage";
 import SkillsPage from "@/pages/SkillsPage";
@@ -32,6 +33,7 @@ function Router() {
     <Layout>
       <Switch>
         <Route path="/" component={HomePage} />
+        <Route path="/services" component={ServicesPage} />
         <Route path="/projects" component={ProjectsPage} />
         <Route path="/about" component={AboutPage} />
         <Route path="/skills" component={SkillsPage} />

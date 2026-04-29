@@ -19,15 +19,18 @@ export default function AboutPage() {
             transition={{ duration: 0.6 }}
           >
             <h1 className="text-4xl md:text-5xl font-bold mb-8">
-              About <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary">Me</span>
+              About <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary">The Studio</span>
             </h1>
             
             <div className="prose prose-invert max-w-none text-muted-foreground text-lg leading-relaxed mb-8">
               <p className="mb-6">
-                I'm Prem Mohan — an AI/ML enthusiast and developer passionate about building intelligent, real-world applications.
+                Prem Mohan Studio is an AI/ML-focused development studio building intelligent, real-world applications for businesses, creators, and innovators.
               </p>
               <p className="mb-6">
-                From NLP-powered sentiment analyzers to RAG-based document chatbots, I love turning complex AI concepts into practical, user-friendly tools. I believe in learning by building, and every project in my portfolio represents a real problem I wanted to solve.
+                From NLP-powered sentiment analyzers to RAG-based document chatbots, we turn complex AI concepts into practical, user-friendly tools. Founded by Prem Mohan, the studio believes in learning by building — every project we ship represents a real problem worth solving.
+              </p>
+              <p>
+                We partner with clients to design, build, and deploy AI-powered solutions end-to-end. If you have an idea, we can help bring it to life.
               </p>
             </div>
 

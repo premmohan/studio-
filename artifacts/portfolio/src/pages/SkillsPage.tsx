@@ -19,7 +19,7 @@ export default function SkillsPage() {
             Skills & <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary">Tech Stack</span>
           </h1>
           <p className="text-lg text-muted-foreground">
-            The tools, languages, and frameworks I use to build intelligent applications.
+            The tools, languages, and frameworks we use to build intelligent applications.
           </p>
         </motion.div>
 
