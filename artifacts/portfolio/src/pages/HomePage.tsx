@@ -26,16 +26,15 @@ export default function HomePage() {
             transition={{ duration: 0.6 }}
           >
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-6">
-              Hi, I'm{" "}
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary">
-                Prem Mohan
+                PREM MOHAN STUDIO
               </span>
             </h1>
             <h2 className="text-xl md:text-2xl text-muted-foreground font-medium mb-6 font-mono">
-              AI/ML Developer <span className="text-primary mx-2">|</span> Building Intelligent Applications
+              AI-Powered Solutions <span className="text-primary mx-2">|</span> Intelligent Web Applications
             </h2>
             <p className="max-w-2xl mx-auto text-lg text-muted-foreground mb-10 leading-relaxed">
-              I build AI-powered tools — from NLP sentiment analyzers to RAG chatbots and ML recommendation systems.
+              We are providing AI-powered tools, intelligent web applications, and ML-driven solutions — from NLP sentiment analyzers to RAG chatbots and recommendation systems.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link href="/projects">
