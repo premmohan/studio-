@@ -1,6 +1,3 @@
-import { SiGithub } from "react-icons/si";
-import { FaLinkedin } from "react-icons/fa";
-
 export function Footer() {
   return (
     <footer className="border-t border-border/40 py-8 bg-background mt-auto">
@@ -9,22 +6,9 @@ export function Footer() {
           © 2025 Prem Mohan Studio | Crafting Intelligent Applications
         </p>
         <div className="flex items-center gap-4">
-          <a
-            href="https://github.com/premmohan"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-muted-foreground hover:text-primary transition-colors"
-          >
-            <SiGithub className="h-5 w-5" />
-          </a>
-          <a
-            href="https://www.linkedin.com/in/prem-mohan/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-muted-foreground hover:text-primary transition-colors"
-          >
-            <FaLinkedin className="h-5 w-5" />
-          </a>
+          <span className="text-xs text-muted-foreground font-mono">
+            MSME Registered · GeM Registered
+          </span>
           <a
             href="https://premmohan.com"
             target="_blank"

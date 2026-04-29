@@ -2,9 +2,7 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { SiGithub } from "react-icons/si";
-import { FaLinkedin } from "react-icons/fa";
-import { Globe, Mail, Send } from "lucide-react";
+import { Globe, Mail, Send, ShieldCheck } from "lucide-react";
 
 export default function ContactPage() {
   return (
@@ -20,7 +18,7 @@ export default function ContactPage() {
             Get in <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary">Touch</span>
           </h1>
           <p className="text-lg text-muted-foreground">
-            Have a project in mind or want to collaborate? I'd love to hear from you.
+            Have a project in mind or want to collaborate? We'd love to hear from you.
           </p>
         </motion.div>
 
@@ -51,19 +49,15 @@ export default function ContactPage() {
                   <span className="font-medium">premmohan.com</span>
                 </a>
 
-                <a href="https://github.com/premmohan" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 text-muted-foreground hover:text-primary transition-colors group">
-                  <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
-                    <SiGithub className="h-5 w-5 text-primary" />
+                <div className="flex items-center gap-4 text-muted-foreground">
+                  <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
+                    <ShieldCheck className="h-5 w-5 text-primary" />
                   </div>
-                  <span className="font-medium">github.com/premmohan</span>
-                </a>
-
-                <a href="https://www.linkedin.com/in/prem-mohan/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 text-muted-foreground hover:text-primary transition-colors group">
-                  <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
-                    <FaLinkedin className="h-5 w-5 text-primary" />
+                  <div>
+                    <div className="font-medium text-foreground">Officially Registered</div>
+                    <div className="text-sm">MSME Registered · GeM Registered</div>
                   </div>
-                  <span className="font-medium">LinkedIn</span>
-                </a>
+                </div>
               </div>
             </div>
           </motion.div>
