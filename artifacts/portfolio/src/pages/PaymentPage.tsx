@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import {
   ArrowRight,
@@ -10,6 +11,7 @@ import {
   CreditCard,
   Mail,
   Award,
+  FileText,
 } from "lucide-react";
 
 type Tier = {
@@ -203,30 +205,62 @@ export default function PaymentPage() {
           </div>
         </motion.div>
 
-        {/* Other payment options */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
-          className="bg-card border border-border/50 rounded-2xl p-8 md:p-10 max-w-3xl mx-auto"
-        >
-          <h2 className="text-2xl font-bold mb-3">Need another payment method?</h2>
-          <p className="text-muted-foreground mb-6">
-            For bank transfers (NEFT/RTGS), international payments, or
-            government/PSU procurement (PO, GeM, invoice-based billing), reach
-            out and we'll send you the appropriate details.
-          </p>
-          <Button
-            asChild
-            className="bg-primary text-primary-foreground hover:bg-primary/90"
-            data-testid="button-contact-billing"
+        {/* Other payment options + Invoice */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            className="bg-card border border-border/50 rounded-2xl p-8"
           >
-            <a href="mailto:contact@premmohan.com?subject=Billing%20Inquiry">
-              <Mail className="mr-2 h-4 w-4" /> Contact for Billing
-            </a>
-          </Button>
-        </motion.div>
+            <Mail className="h-8 w-8 text-primary mb-4" />
+            <h2 className="text-xl font-bold mb-3">
+              Need another payment method?
+            </h2>
+            <p className="text-muted-foreground mb-6 text-sm leading-relaxed">
+              For bank transfers (NEFT/RTGS), international payments, or
+              government/PSU procurement (PO, GeM, invoice-based billing), reach
+              out and we'll send you the details.
+            </p>
+            <Button
+              asChild
+              variant="outline"
+              className="border-primary/30 hover:bg-primary/10"
+              data-testid="button-contact-billing"
+            >
+              <a href="mailto:contact@premmohan.com?subject=Billing%20Inquiry">
+                <Mail className="mr-2 h-4 w-4" /> Contact for Billing
+              </a>
+            </Button>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.1 }}
+            className="bg-card border border-border/50 rounded-2xl p-8"
+          >
+            <FileText className="h-8 w-8 text-primary mb-4" />
+            <h2 className="text-xl font-bold mb-3">
+              Generate a GST Invoice
+            </h2>
+            <p className="text-muted-foreground mb-6 text-sm leading-relaxed">
+              Create a fully GST-compliant invoice with CGST/SGST or IGST
+              breakdown, HSN codes, and amount in words. Download as PDF in
+              seconds.
+            </p>
+            <Link href="/invoice">
+              <Button
+                className="bg-primary text-primary-foreground hover:bg-primary/90"
+                data-testid="button-create-invoice"
+              >
+                <FileText className="mr-2 h-4 w-4" /> Create Invoice
+              </Button>
+            </Link>
+          </motion.div>
+        </div>
       </div>
     </div>
   );

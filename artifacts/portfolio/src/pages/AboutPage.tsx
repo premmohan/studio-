@@ -8,6 +8,7 @@ import {
   Sparkles,
   Users,
   ArrowRight,
+  FileDown,
 } from "lucide-react";
 import { Link } from "wouter";
 
@@ -73,13 +74,22 @@ export default function AboutPage() {
               Prem Mohan Studio
             </span>
           </h1>
-          <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
+          <p className="text-lg md:text-xl text-muted-foreground leading-relaxed mb-8">
             Prem Mohan Studio is an AI-first development studio building
             intelligent products, agents, and platforms for startups,
             enterprises, and government clients. We turn complex AI capabilities
             into practical, real-world solutions — from custom ML models and
             autonomous agents to full SaaS platforms and consultancy.
           </p>
+          <Link href="/company-profile">
+            <Button
+              size="lg"
+              className="h-12 px-8 bg-primary text-primary-foreground hover:bg-primary/90 shadow-[0_0_25px_-5px_rgba(0,212,255,0.6)]"
+              data-testid="button-download-company-profile"
+            >
+              <FileDown className="mr-2 h-4 w-4" /> Download Company Profile
+            </Button>
+          </Link>
         </motion.div>
 
         {/* Credentials */}

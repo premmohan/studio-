@@ -13,6 +13,8 @@ import ProjectsPage from "@/pages/ProjectsPage";
 import AboutPage from "@/pages/AboutPage";
 import ContactPage from "@/pages/ContactPage";
 import PaymentPage from "@/pages/PaymentPage";
+import CompanyProfilePage from "@/pages/CompanyProfilePage";
+import InvoicePage from "@/pages/InvoicePage";
 
 const queryClient = new QueryClient();
 
@@ -38,6 +40,8 @@ function Router() {
         <Route path="/about" component={AboutPage} />
         <Route path="/contact" component={ContactPage} />
         <Route path="/payment" component={PaymentPage} />
+        <Route path="/company-profile" component={CompanyProfilePage} />
+        <Route path="/invoice" component={InvoicePage} />
         <Route component={NotFound} />
       </Switch>
     </Layout>
