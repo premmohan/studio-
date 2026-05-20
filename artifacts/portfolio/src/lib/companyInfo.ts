@@ -1,5 +1,5 @@
 // EDIT THESE DETAILS WITH YOUR ACTUAL COMPANY INFORMATION
-// Used by Company Profile page and GST Invoice generator
+// Used by Company Profile page and Invoice generator
 export const companyInfo = {
   name: "Prem Mohan Studio",
   tagline: "AI-Powered Solutions | Intelligent Web Applications",
@@ -14,11 +14,6 @@ export const companyInfo = {
     pincode: "PIN Code",
     country: "India",
   },
-  // Statutory details (fill these in)
-  gstin: "YOUR_GSTIN_HERE",
-  msmeUAM: "YOUR_MSME_UAM_NUMBER",
-  gemSellerId: "YOUR_GEM_SELLER_ID",
-  pan: "YOUR_PAN_NUMBER",
   // Bank details for invoices
   bank: {
     accountName: "Prem Mohan Studio",
@@ -27,9 +22,6 @@ export const companyInfo = {
     bankName: "Your Bank Name",
     branch: "Branch Name",
   },
-  // Default GST settings
-  defaultStateCode: "29", // e.g. 29 = Karnataka
-  defaultGstRate: 18, // %
 };
 
 export const companyServices = [

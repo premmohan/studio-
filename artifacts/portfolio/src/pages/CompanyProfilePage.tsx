@@ -4,7 +4,6 @@ import { Link } from "wouter";
 import {
   companyInfo,
   companyServices,
-  companyCredentials,
   companyTech,
 } from "@/lib/companyInfo";
 
@@ -102,17 +101,20 @@ export default function CompanyProfilePage() {
             Government Credentials
           </h2>
           <div className="space-y-3">
-            {companyCredentials.map((cred) => (
-              <div
-                key={cred.label}
-                className="border border-border/50 rounded-lg p-4"
-              >
-                <div className="font-bold mb-1">{cred.label}</div>
-                <div className="text-sm text-muted-foreground">
-                  {cred.detail}
-                </div>
+            <div className="border border-border/50 rounded-lg p-4">
+              <div className="font-bold mb-1">MSME Registered</div>
+              <div className="text-sm text-muted-foreground">
+                Officially recognized under the Government of India's Micro, Small &amp; Medium
+                Enterprises framework.
               </div>
-            ))}
+            </div>
+            <div className="border border-border/50 rounded-lg p-4">
+              <div className="font-bold mb-1">GeM Registered</div>
+              <div className="text-sm text-muted-foreground">
+                Registered seller on the Government e-Marketplace (GeM) — eligible for
+                procurement by government departments and PSUs.
+              </div>
+            </div>
           </div>
         </section>
 
@@ -153,24 +155,24 @@ export default function CompanyProfilePage() {
           <h2 className="text-xs font-mono uppercase tracking-widest text-primary mb-4">
             Statutory Details
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
-            <div>
-              <div className="text-muted-foreground text-xs">GSTIN</div>
-              <div className="font-mono font-semibold">{companyInfo.gstin}</div>
-            </div>
-            <div>
-              <div className="text-muted-foreground text-xs">MSME / Udyam</div>
-              <div className="font-mono font-semibold">{companyInfo.msmeUAM}</div>
-            </div>
-            <div>
-              <div className="text-muted-foreground text-xs">GeM Seller ID</div>
-              <div className="font-mono font-semibold">
-                {companyInfo.gemSellerId}
+          <div className="flex flex-wrap gap-3">
+            <div className="border border-border/50 rounded-lg px-5 py-3 flex items-center gap-3">
+              <span className="text-primary font-bold text-lg">✓</span>
+              <div>
+                <div className="font-semibold text-sm">MSME Registered</div>
+                <div className="text-xs text-muted-foreground">
+                  Government of India — Ministry of MSME
+                </div>
               </div>
             </div>
-            <div>
-              <div className="text-muted-foreground text-xs">PAN</div>
-              <div className="font-mono font-semibold">{companyInfo.pan}</div>
+            <div className="border border-border/50 rounded-lg px-5 py-3 flex items-center gap-3">
+              <span className="text-primary font-bold text-lg">✓</span>
+              <div>
+                <div className="font-semibold text-sm">GeM Registered</div>
+                <div className="text-xs text-muted-foreground">
+                  Government e-Marketplace — Verified Seller
+                </div>
+              </div>
             </div>
           </div>
         </section>
