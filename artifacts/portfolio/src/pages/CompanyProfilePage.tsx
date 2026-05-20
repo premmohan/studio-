@@ -47,7 +47,7 @@ export default function CompanyProfilePage() {
               <div className="font-semibold text-foreground mb-1">
                 Company Profile
               </div>
-              <div>2025 · Capability Statement</div>
+              <div>2026 · Capability Statement</div>
             </div>
           </div>
         </header>

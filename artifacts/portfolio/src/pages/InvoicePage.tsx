@@ -83,7 +83,7 @@ const blankItem = (): LineItem => ({
 });
 
 export default function InvoicePage() {
-  const [invoiceNumber, setInvoiceNumber] = useState("INV-2025-001");
+  const [invoiceNumber, setInvoiceNumber] = useState("INV-2026-001");
   const [invoiceDate, setInvoiceDate] = useState(todayISO());
   const [dueDate, setDueDate] = useState(futureISO(15));
 
